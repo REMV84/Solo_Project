@@ -30,7 +30,7 @@
     }
 
     function getWeather(location){
-      var baseUrl = 'http://api.openweathermap.org/data/2.5/weather?'
+      var baseUrl = 'https://api.openweathermap.org/data/2.5/weather?'
       var url = baseUrl + 'q=' + location + '&units=metric' + '&appid=' + apikey;
       $.get(url).done(function(data){
         updateWeatherData(data);
