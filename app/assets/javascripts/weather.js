@@ -29,7 +29,7 @@
 
   function updateWeatherData(data){
     var iconcode = data.weather[0].icon;
-    var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+    var iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
     $(tag + ' .card-weather .card-body:first-child').attr('class', 'card-body ' + '_' + iconcode);
     $(tag + ' .weather-data #temperature').html(parseInt(data.main.temp));
     $(tag + ' .weather-data #description').html(data.weather[0].description);
@@ -48,7 +48,7 @@
         $(tag + ' .weakly-weather .day-' + day).html(dayOfWeek);
         $(tag + ' .weakly-weather .temp-' + day).html(parseInt(item.main.temp) + '°C');
         var iconcode = item.weather[0].icon;
-        var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+        var iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
         $(tag + ' .weakly-weather #wicon-' + day).attr('src',iconurl);
         day++;
       }
