@@ -28,7 +28,7 @@
  }
 
  .padding {
-     padding: 5rem
+     padding: 2rem 5rem 5rem 5rem;
  }
 
  .grid-margin,
@@ -59,9 +59,84 @@
  }
 
  .card-weather .card-body:first-child {
-     background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1557323760/weather.svg) no-repeat center;
+    // background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1557323760/weather.svg) no-repeat center;
+     background-color: white;
      background-size: cover
  }
+
+.card-weather .card-body._01d{
+     background: url('01d.png') no-repeat;
+     background-position: center;
+     background-size: 50%;
+}
+
+.card-weather .card-body._01n{
+     background: url('01n.png') no-repeat;
+     background-position: center;
+     background-size: 50%;
+}
+
+.card-weather .card-body._02n{
+     background: url('02n.png') no-repeat;
+     background-position: center;
+     background-size: 50%;
+}
+
+.card-weather .card-body._02d{
+     background: url('02d.png') no-repeat;
+     background-position: center;
+     background-size: 50%;
+}
+
+.card-weather .card-body._03d, .card-weather .card-body._03n{
+     background: url('03d.png') no-repeat;
+     background-position: center;
+     background-size: 50%;  
+}
+
+.card-weather .card-body._04d, .card-weather .card-body._04n{
+     background: url('04d.png') no-repeat;
+     background-position: center;
+     background-size: 50%;  
+}
+
+.card-weather .card-body._09d, .card-weather .card-body._09n{
+     background: url('09d.png') no-repeat;
+     background-size: 50%;
+     background-position: center;
+}
+
+.card-weather .card-body._10d{
+     background: url('10d.png') no-repeat;
+     background-size: 50%;
+     background-position: center;
+}
+
+
+.card-weather .card-body._10n{
+     background: url('10n.png') no-repeat;
+     background-size: 50%;
+     background-position: center;
+}
+
+
+.card-weather .card-body._11d, .card-weather .card-body._11n{
+     background: url('11d.png') no-repeat;
+     background-size: 50%;
+     background-position: center;
+}
+
+.card-weather .card-body._13d, .card-weather .card-body._13n{
+     background: url('13d.png') no-repeat;
+     background-size: 50%;
+     background-position: center;
+}
+
+.card-weather .card-body._50d, .card-weather .card-body._50n{
+     background: url('50d.png') no-repeat;
+     background-size: 50%;
+     background-position: center;
+}
 
  .card .card-body {
      padding: 1.88rem 1.81rem
@@ -155,4 +230,15 @@
     text-transform:capitalize;
 }
 
+.weakly-weather-item img{
+     width: 25px;
+}
+
+.weather-location{
+     text-transform:capitalize;
+}
+
+#new-form .city{
+     width: 100%;
+}
  
